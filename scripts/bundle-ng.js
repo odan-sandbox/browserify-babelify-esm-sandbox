@@ -11,6 +11,7 @@ browserify("./src/ng.js")
       ],
     ],
     sourceType: "module",
+    global: true
   })
   .bundle()
   .pipe(fs.createWriteStream("bundle.js"));
